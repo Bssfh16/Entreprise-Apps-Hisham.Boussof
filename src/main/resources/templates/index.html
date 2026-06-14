@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('Home')}"></head>
+<body>
+    <nav th:replace="~{fragments/layout :: navbar}"></nav>
+    <main>
+        <h2>Overzicht Evenementen</h2>
+        
+        <table th:if="${!evenementen.isEmpty()}">
+            <thead>
+                <tr>
+                    <th>Titel</th>
+                    <th>Organisatie</th>
+                    <th>Actie</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="event : ${evenementen}">
+                    <td th:text="${event.titel}">Titel</td>
+                    <td th:text="${event.organisatie}">Org</td>
+                    <td><a th:href="@{/details/{id}(id=${event.id})}" class="btn btn-secondary">Details</a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p th:if="${evenementen.isEmpty()}" style="font-style: italic;">Er zijn momenteel geen evenementen gepland.</p>
+        
+        <br>
+        <a href="/new" class="btn">Nieuw Evenement Toevoegen</a>
+    </main>
+    <footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>
