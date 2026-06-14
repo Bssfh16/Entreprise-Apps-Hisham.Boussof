@@ -1,4 +1,4 @@
-package com.anderlecht.ngo.Entreprise_Apps_Hisham.Boussof.models;
+package com.anderlecht.ngo.Entreprise_Apps_Hisham_Boussof.models;
 import jakarta.persistence.*;
 
 @Entity
