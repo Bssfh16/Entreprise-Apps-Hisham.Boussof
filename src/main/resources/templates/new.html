@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('Nieuw Event')}"></head>
+<body>
+    <nav th:replace="~{fragments/layout :: navbar}"></nav>
+    <main>
+        <div class="form-card">
+            <h2>Nieuw Evenement Toevoegen</h2>
+            <form th:action="@{/new}" th:object="${evenement}" method="post">
+                
+                <div class="form-group">
+                    <label>Titel</label>
+                    <input type="text" th:field="*{titel}">
+                    <p class="error" th:if="${#fields.hasErrors('titel')}" th:errors="*{titel}"></p>
+                </div>
+                
+                <div class="form-group">
+                    <label>Tijdstip (bv. 2026-12-31 20:00)</label>
+                    <input type="datetime-local" th:field="*{tijdstip}">
+                    <p class="error" th:if="${#fields.hasErrors('tijdstip')}" th:errors="*{tijdstip}"></p>
+                </div>
+                
+                <div class="form-group">
+                    <label>Organisatie</label>
+                    <input type="text" th:field="*{organisatie}">
+                </div>
+                
+                <div class="form-group">
+                    <label>E-mail Contactpersoon</label>
+                    <input type="email" th:field="*{mailContactpersoon}">
+                    <p class="error" th:if="${#fields.hasErrors('mailContactpersoon')}" th:errors="*{mailContactpersoon}"></p>
+                </div>
+                
+                <hr style="border: 1px solid var(--licht-groen); margin: 20px 0;">
+                <h4 style="color: var(--donker-oranje);">Locatie Gegevens</h4>
+                
+                <div class="form-group">
+                    <label>Naam Locatie</label>
+                    <input type="text" th:field="*{locatie.naam}" required>
+                </div>
+                <div class="form-group">
+                    <label>Adres Locatie</label>
+                    <input type="text" th:field="*{locatie.adres}" required>
+                </div>
+                <div class="form-group">
+                    <label>Capaciteit (aantal personen)</label>
+                    <input type="number" th:field="*{locatie.capaciteit}" required>
+                </div>
+
+                <hr style="border: 1px solid var(--licht-groen); margin: 20px 0;">
+
+                <div class="form-group">
+                    <label>Omschrijving van het Evenement</label>
+                    <textarea th:field="*{omschrijving}" rows="4"></textarea>
+                    <p class="error" th:if="${#fields.hasErrors('omschrijving')}" th:errors="*{omschrijving}"></p>
+                </div>
+                
+                <button type="submit" class="btn">Toevoegen</button>
+            </form>
+        </div>
+    </main>
+    <footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>
