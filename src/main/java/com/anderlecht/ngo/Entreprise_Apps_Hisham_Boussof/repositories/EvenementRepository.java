@@ -5,5 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 
 public interface EvenementRepository extends CrudRepository<Evenement, Long> {
-    List<Evenement> vindTop10OrderByTijdstipDesc();
+    List<Evenement> findTop10ByOrderByTijdstipDesc();
 }
