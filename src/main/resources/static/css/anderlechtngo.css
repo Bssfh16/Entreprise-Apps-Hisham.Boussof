@@ -1,0 +1,141 @@
+:root { 
+    --achtergrond-kleur: #F9F6F0; 
+    --tekst-kleur: #2F3E46; 
+    --donker-groen: #84A98C; 
+    --licht-groen: #CAD2C5; 
+    --donker-oranje: #D08C60; 
+}
+
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    background-color: var(--achtergrond-kleur); 
+    color: var(--tekst-kleur); 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+nav { 
+    background-color: var(--donker-groen); 
+    padding: 1.5rem 2rem; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-radius: 0 0 20px 20px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+}
+
+nav a { 
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    margin-left: 20px; 
+    font-size: 1.1rem; 
+}
+
+nav a:hover { 
+    color: var(--tekst-kleur); 
+}
+
+nav .logo { 
+    font-size: 1.5rem; 
+    letter-spacing: 1px; 
+    margin-left: 0; 
+}
+
+main { 
+    flex: 1; 
+    padding: 2rem; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+table { 
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 0 10px; 
+}
+
+th { 
+    text-align: left; 
+    padding: 10px; 
+    color: var(--donker-oranje); 
+    border-bottom: 2px solid var(--licht-groen); 
+}
+
+td { 
+    background-color: #fff; 
+    padding: 15px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02); 
+}
+
+td:first-child { 
+    border-radius: 10px 0 0 10px; 
+}
+
+td:last-child { 
+    border-radius: 0 10px 10px 0; 
+}
+
+.btn { 
+    background-color: var(--donker-oranje); 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 25px; 
+    text-decoration: none; 
+    display: inline-block; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+
+.btn:hover { 
+    background-color: #b87850; 
+}
+
+.btn-secondary { 
+    background-color: var(--donker-groen); 
+}
+
+.form-card { 
+    background: #fff; 
+    padding: 2rem; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+    border-left: 5px solid var(--donker-groen); 
+}
+
+.form-group { 
+    margin-bottom: 15px; 
+}
+
+.form-group label { 
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+.form-group input, .form-group textarea { 
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid var(--licht-groen); 
+    border-radius: 8px; 
+    box-sizing: border-box; 
+}
+
+.error { 
+    color: var(--donker-oranje); 
+    font-size: 0.85rem; 
+    margin-top: 5px; 
+}
+
+footer { 
+    text-align: center; 
+    padding: 20px; 
+    font-size: 0.9rem; 
+    color: var(--donker-groen); 
+}
