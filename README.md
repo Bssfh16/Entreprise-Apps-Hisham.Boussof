@@ -1,7 +1,14 @@
 # Anderlecht 1070 NGO
-Dit project hoort bij het vak "Entreprise Application".
+Dit project hoort bij het vak "Entreprise Application". 
 
 # Functionaliteiten
+- Het weergeven van de laatste evenementen en buurtactiviteiten op de homepagina.
+- Het bekijken van de details van specifieke evenementen door te klikken op de titel op de homepagina.
+- Het ingeven en publiceren van nieuwe evenementen met hun bijbehorende kenmerken (zoals tijdstip, adres en capaciteit).
+- Een about-pagina waar de missie en contactgegevens van de organisatie worden weergegeven.
+- Het indienen van een contactformulier dat een mail genereert via de applicatie.
+- De mogelijkheid hebben om de verantwoordelijken te contacteren via een formulier.
+- Een test-API gebruiken om fictieve mails te krijgen op een fictieve email-adres.
  
 # Installatiehandleiding
 - Download Visual Studio Code, in het geval dit nog niet gedaan is.
@@ -19,7 +26,7 @@ Dit project hoort bij het vak "Entreprise Application".
 - Open vervolgens de browser en typ dit om de website te openen:
   - http:http://localhost:8080/
 - Nu is het mogelijk om de functionaliteiten van de website te gebruiken.
-
+- Om het contactformulier te testen, wordt er 'mailtrap.io' gebruikt.
 
 # Screenshots van de applicatie
 
