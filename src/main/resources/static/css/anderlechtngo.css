@@ -1,9 +1,9 @@
 :root { 
-    --achtergrond-kleur: #F9F6F0; 
-    --tekst-kleur: #2F3E46; 
-    --donker-groen: #84A98C; 
-    --licht-groen: #CAD2C5; 
-    --donker-oranje: #D08C60; 
+    --achtergrond-kleur: #f4f4f4; 
+    --tekst-kleur: #313e45; 
+    --zeegroen-blauw: #0c668a; 
+    --licht-wit: #f9f9f9; 
+    --donker-blauw: #0a0149; 
 }
 
 body { 
@@ -18,7 +18,7 @@ body {
 }
 
 nav { 
-    background-color: var(--donker-groen); 
+    background-color: var(--zeegroen-blauw); 
     padding: 1.5rem 2rem; 
     display: flex; 
     justify-content: space-between; 
@@ -28,7 +28,7 @@ nav {
 }
 
 nav a { 
-    color: #fff; 
+    color: var(--licht-wit); 
     text-decoration: none; 
     font-weight: bold; 
     margin-left: 20px; 
@@ -63,8 +63,8 @@ table {
 th { 
     text-align: left; 
     padding: 10px; 
-    color: var(--donker-oranje); 
-    border-bottom: 2px solid var(--licht-groen); 
+    color: var(--donker-blauw); 
+    border-bottom: 2px solid var(--zeegroen-blauw); 
 }
 
 td { 
@@ -82,8 +82,8 @@ td:last-child {
 }
 
 .btn { 
-    background-color: var(--donker-oranje); 
-    color: white; 
+    background-color: var(--donker-blauw); 
+    color: var(--licht-wit); 
     padding: 10px 20px; 
     border: none; 
     border-radius: 25px; 
@@ -94,11 +94,11 @@ td:last-child {
 }
 
 .btn:hover { 
-    background-color: #b87850; 
+    background-color: #070130;
 }
 
 .btn-secondary { 
-    background-color: var(--donker-groen); 
+    background-color: var(--zeegroen-blauw); 
 }
 
 .form-card { 
@@ -106,7 +106,7 @@ td:last-child {
     padding: 2rem; 
     border-radius: 15px; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
-    border-left: 5px solid var(--donker-groen); 
+    border-left: 5px solid var(--zeegroen-blauw); 
 }
 
 .form-group { 
@@ -122,13 +122,13 @@ td:last-child {
 .form-group input, .form-group textarea { 
     width: 100%; 
     padding: 10px; 
-    border: 1px solid var(--licht-groen); 
+    border: 1px solid var(--zeegroen-blauw); 
     border-radius: 8px; 
     box-sizing: border-box; 
 }
 
 .error { 
-    color: var(--donker-oranje); 
+    color: #bb0b05;
     font-size: 0.85rem; 
     margin-top: 5px; 
 }
@@ -137,5 +137,5 @@ footer {
     text-align: center; 
     padding: 20px; 
     font-size: 0.9rem; 
-    color: var(--donker-groen); 
+    color: var(--zeegroen-blauw); 
 }
