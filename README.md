@@ -43,7 +43,8 @@ Dit project hoort bij het vak "Entreprise Applications". Dit is een informatieve
   - https://gemini.google.com/share/610201564ba6
   - https://gemini.google.com/share/136682eadd84
   - https://gemini.google.com/share/d147c3f99a7b
-
+- Spring Initializr: 
+  - https://start.spring.io/
 
 # Sterk Aangeraden Materiaal
 - Visual Studio Code
