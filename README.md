@@ -14,7 +14,7 @@ Dit project hoort bij het vak "Entreprise Applications". Dit is een informatieve
 - Download Visual Studio Code, in het geval dit nog niet gedaan is.
 - Aan de linkerkant van het scherm op Visual Studio Code, bevindt zich een vierkant gevuld met vier blokjes:
   - Klik op dat vierkant.
-- Voeg de volgende extensies toe op Visual Studio Code om eventuele problemen te vermijden en de database te kunnen bekijken:
+- Voeg de volgende extensies toe op Visual Studio Code om eventuele problemen te vermijden:
   - Extension Pack For Java (Microsoft)
   - Spring Boot Extension Pack (VMWare)
 - Clone de GitHub Repository:
@@ -23,6 +23,7 @@ Dit project hoort bij het vak "Entreprise Applications". Dit is een informatieve
   - Klik daarop en plak de link van het project daarop om de repository te clonen.
     - Link: https://github.com/Bssfh16/Entreprise-Apps-Hisham.Boussof.git
 - Open het bestand Application.java, gesitueerd in: src\main\java\com\anderlecht\ngo\Entreprise_Apps_Hisham_Boussof
+- Run de main-function op application.java
 - Open vervolgens de browser en typ dit om de website te openen:
   - http:http://localhost:8080/
 - Nu is het mogelijk om de functionaliteiten van de website te gebruiken.
