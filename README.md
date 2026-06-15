@@ -2,11 +2,11 @@
 Dit project hoort bij het vak "Entreprise Applications". Dit is een informatieve website voor een NGO in Anderlecht die evenementen organiseert voor de bevolking. Code werd in html, css en java geschreven.
 
 # Functionaliteiten
-- Het weergeven van de laatste evenementen en buurtactiviteiten op de homepagina.
-- Het bekijken van de details van specifieke evenementen door te klikken op de titel op de homepagina.
+- Het weergeven van de laatste evenementen/activiteiten op de homepagina.
+- Het bekijken van de details van specifieke evenementen door te klikken op "details" bij elk evenement.
 - Het ingeven en publiceren van nieuwe evenementen met hun bijbehorende kenmerken (zoals tijdstip, adres en capaciteit).
 - Een about-pagina waar de missie en contactgegevens van de organisatie worden weergegeven.
-- Het indienen van een contactformulier dat een mail genereert via de applicatie.
+- Het indienen van een contactformulier dat een mail genereert via een API.
 - De mogelijkheid hebben om de verantwoordelijken te contacteren via een formulier.
 - Een test-API gebruiken om fictieve mails te krijgen op een fictieve email-adres.
  
