@@ -78,7 +78,7 @@ public class DataSeeder {
                     Evenement ev = new Evenement();
                     ev.setTitel(titels[i]);
                     ev.setOmschrijving(omschrijvingen[i]);
-                    ev.setTijdstip(LocalDateTime.now().plusDays(i + 2).withHour(14).withMinute(0)); 
+                    ev.setTijdstip(LocalDateTime.now().plusDays(i + 2).withHour(14).withMinute(0).withSecond(0).withNano(0));
                     ev.setOrganisatie("Anderlecht 1070 NGO");
                     ev.setMailContactpersoon("info@anderlecht1070ngo.be");
                     ev.setLocatie(loc);

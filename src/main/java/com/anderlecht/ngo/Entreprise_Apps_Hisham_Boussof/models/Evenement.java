@@ -20,6 +20,7 @@ public class Evenement {
     private String omschrijving;
 
     @NotNull(message = "Tijdstip is verplicht!")
+    @org.springframework.format.annotation.DateTimeFormat(pattern = "yyyy-MM-dd' 'HH:mm")
     private LocalDateTime tijdstip;
 
     private String organisatie;
