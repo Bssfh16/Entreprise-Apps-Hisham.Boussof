@@ -28,7 +28,7 @@ Dit project hoort bij het vak "Entreprise Applications". Dit is een informatieve
 - Nu is het mogelijk om de functionaliteiten van de website te gebruiken.
 - Om het contactformulier te testen, wordt er 'mailtrap.io' gebruikt.
 
-# Screenshots van de applicatie
+# Screenshots van de website
 <img width="1920" height="1322" alt="screencapture-localhost-8080-2026-06-15-17_51_58" src="https://github.com/user-attachments/assets/50a57e70-fa59-46a4-942d-c87d4d7c814b" />
 <img width="1920" height="1610" alt="screencapture-localhost-8080-new-2026-06-15-18_00_01" src="https://github.com/user-attachments/assets/1152e5c1-3f4b-45e4-a3c6-a327e9fdae24" />
 <img width="1920" height="912" alt="screencapture-localhost-8080-contact-2026-06-15-18_05_37" src="https://github.com/user-attachments/assets/a2cacd1d-b575-495f-9e4a-e4282069250c" />
