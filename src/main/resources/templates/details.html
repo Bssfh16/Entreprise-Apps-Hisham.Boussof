@@ -5,22 +5,24 @@
     <nav th:replace="~{fragments/layout :: navbar}"></nav>
     <main>
         <div class="form-card">
-            <h2 th:text="${evenement.titel}" style="color: var(--donker-oranje);">Titel</h2>
-            <p><strong>Wanneer:</strong> <span th:text="${evenement.tijdstip}"></span></p>
-            <p><strong>Organisatie:</strong> <span th:text="${evenement.organisatie}"></span></p>
-            <p><strong>Contact:</strong> <a th:href="'mailto:' + ${evenement.mailContactpersoon}" th:text="${evenement.mailContactpersoon}"></a></p>
+            <h2 th:text="${evenement.titel}">Titel</h2>
             
-            <div style="background-color: var(--achtergrond-kleur); padding: 15px; border-radius: 8px; margin: 15px 0;">
-                <h4 style="margin-top:0;">Locatie</h4>
-                <p th:text="${evenement.locatie.naam}"></p>
-                <p th:text="${evenement.locatie.adres}"></p>
-                <p>Capaciteit: <span th:text="${evenement.locatie.capaciteit}"></span> personen</p>
+            <p><strong>Wanneer:</strong> <span th:text="${#temporals.format(evenement.tijdstip, 'dd-MM-yyyy HH:mm')}"></span></p>
+            <p><strong>Organisatie:</strong> <span th:text="${evenement.organisatie}"></span></p>
+            <p><strong>Contact:</strong> <a th:href="'mailto:' + ${evenement.mailContactpersoon}" th:text="${evenement.mailContactpersoon}" style="color: var(--zeegroen-blauw); text-decoration: none; font-weight: bold;"></a></p>
+            
+            <div style="background-color: var(--achtergrond-kleur); padding: 20px; border-radius: 8px; border: 1px solid var(--zeegroen-blauw); margin: 20px 0;">
+                <h4 style="margin-top:0; color: var(--donker-blauw);">Locatie</h4>
+                <p style="margin-bottom: 5px;" th:text="${evenement.locatie.naam}"></p>
+                <p style="margin-bottom: 5px;" th:text="${evenement.locatie.adres}"></p>
+                <p style="margin-bottom: 0;"><strong>Capaciteit:</strong> <span th:text="${evenement.locatie.capaciteit}"></span> personen</p>
             </div>
 
-            <h4>Omschrijving</h4>
+            <h4 style="color: var(--donker-blauw);">Omschrijving</h4>
             <p th:text="${evenement.omschrijving}"></p>
             <br>
-            <a href="/" class="btn">Terug naar overzicht</a>
+            
+            <a href="/" class="btn btn-secondary">Terug naar overzicht</a>
         </div>
     </main>
     <footer th:replace="~{fragments/layout :: footer}"></footer>

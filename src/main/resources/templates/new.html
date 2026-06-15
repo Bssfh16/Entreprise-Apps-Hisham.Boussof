@@ -5,57 +5,62 @@
     <nav th:replace="~{fragments/layout :: navbar}"></nav>
     <main>
         <div class="form-card">
-            <h2>Nieuw Evenement Toevoegen</h2>
+            <h2 style="margin-bottom: 25px;">Nieuw Evenement Toevoegen</h2>
+            
             <form th:action="@{/new}" th:object="${evenement}" method="post">
                 
                 <div class="form-group">
                     <label>Titel</label>
-                    <input type="text" th:field="*{titel}">
+                    <input type="text" th:field="*{titel}" placeholder="Bv. Fun And Out">
                     <p class="error" th:if="${#fields.hasErrors('titel')}" th:errors="*{titel}"></p>
                 </div>
                 
                 <div class="form-group">
-                    <label>Tijdstip (bv. 2026-12-31 20:00)</label>
+                    <label>Tijdstip</label>
                     <input type="datetime-local" th:field="*{tijdstip}">
                     <p class="error" th:if="${#fields.hasErrors('tijdstip')}" th:errors="*{tijdstip}"></p>
                 </div>
                 
                 <div class="form-group">
                     <label>Organisatie</label>
-                    <input type="text" th:field="*{organisatie}">
+                    <input type="text" th:field="*{organisatie}" placeholder="Bv. Anderlecht 1070 NGO">
                 </div>
                 
                 <div class="form-group">
                     <label>E-mail Contactpersoon</label>
-                    <input type="email" th:field="*{mailContactpersoon}">
+                    <input type="email" th:field="*{mailContactpersoon}" placeholder="Bv. info@anderlecht1070ngo.be">
                     <p class="error" th:if="${#fields.hasErrors('mailContactpersoon')}" th:errors="*{mailContactpersoon}"></p>
                 </div>
                 
-                <hr style="border: 1px solid var(--licht-groen); margin: 20px 0;">
-                <h4 style="color: var(--donker-oranje);">Locatie Gegevens</h4>
+                <hr style="border: 0; border-top: 1px solid var(--zeegroen-blauw); margin: 30px 0; opacity: 0.3;">
+                <h4 style="color: var(--donker-blauw); margin-bottom: 20px;">Locatie Gegevens</h4>
                 
                 <div class="form-group">
                     <label>Naam Locatie</label>
-                    <input type="text" th:field="*{locatie.naam}" required>
+                    <input type="text" th:field="*{locatie.naam}" required placeholder="Bv. Campus Kaai">
                 </div>
                 <div class="form-group">
                     <label>Adres Locatie</label>
-                    <input type="text" th:field="*{locatie.adres}" required>
+                    <input type="text" th:field="*{locatie.adres}" required placeholder="Bv. Nijverheidskaai 170, 1070 Anderlecht">
                 </div>
                 <div class="form-group">
                     <label>Capaciteit (aantal personen)</label>
-                    <input type="number" th:field="*{locatie.capaciteit}" required>
+                    <input type="number" th:field="*{locatie.capaciteit}" required placeholder="Bv. 50">
                 </div>
 
-                <hr style="border: 1px solid var(--licht-groen); margin: 20px 0;">
+                <hr style="border: 0; border-top: 1px solid var(--zeegroen-blauw); margin: 30px 0; opacity: 0.3;">
+                <h4 style="color: var(--donker-blauw); margin-bottom: 20px;">Extra Informatie</h4>
 
                 <div class="form-group">
                     <label>Omschrijving van het Evenement</label>
-                    <textarea th:field="*{omschrijving}" rows="4"></textarea>
+                    <textarea th:field="*{omschrijving}" rows="4" placeholder="Geef een korte omschrijving van het evenement..."></textarea>
                     <p class="error" th:if="${#fields.hasErrors('omschrijving')}" th:errors="*{omschrijving}"></p>
                 </div>
                 
-                <button type="submit" class="btn">Toevoegen</button>
+                <div style="margin-top: 30px;">
+                    <button type="submit" class="btn">Evenement Toevoegen</button>
+                    <a href="/" class="btn btn-secondary" style="margin-left: 10px;">Annuleren</a>
+                </div>
             </form>
         </div>
     </main>

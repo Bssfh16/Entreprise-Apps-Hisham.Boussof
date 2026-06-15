@@ -4,29 +4,40 @@
 <body>
     <nav th:replace="~{fragments/layout :: navbar}"></nav>
     <main>
-        <h2>Overzicht Evenementen</h2>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h2 style="margin-bottom: 0;">Overzicht Evenementen</h2>
+            <a href="/new" class="btn">+ Nieuw Evenement</a>
+        </div>
         
         <table th:if="${!evenementen.isEmpty()}">
             <thead>
                 <tr>
                     <th>Titel</th>
+                    <th>Wanneer</th>
                     <th>Organisatie</th>
-                    <th>Actie</th>
+                    <th style="text-align: right;">Actie</th>
                 </tr>
             </thead>
             <tbody>
                 <tr th:each="event : ${evenementen}">
-                    <td th:text="${event.titel}">Titel</td>
+                    <td th:text="${event.titel}" style="font-weight: 600; color: var(--zeegroen-blauw);">Titel</td>
+                    
+                    <td th:text="${#temporals.format(event.tijdstip, 'dd-MM-yyyy HH:mm')}">Datum</td>
+                    
                     <td th:text="${event.organisatie}">Org</td>
-                    <td><a th:href="@{/details/{id}(id=${event.id})}" class="btn btn-secondary">Details</a></td>
+                    
+                    <td style="text-align: right;">
+                        <a th:href="@{/details/{id}(id=${event.id})}" class="btn btn-secondary" style="padding: 6px 14px; font-size: 0.85rem;">Details</a>
+                    </td>
                 </tr>
             </tbody>
         </table>
         
-        <p th:if="${evenementen.isEmpty()}" style="font-style: italic;">Er zijn momenteel geen evenementen gepland.</p>
+        <div th:if="${evenementen.isEmpty()}" style="background-color: #ffffff; padding: 40px; text-align: center; border-radius: 8px; border: 1px solid var(--rand-kleur); margin-top: 20px;">
+            <p style="color: var(--tekst-kleur); font-size: 1.1rem; margin-bottom: 15px;">Er zijn momenteel geen evenementen gepland in de buurt.</p>
+            <a href="/new" class="btn">Voeg het eerste evenement toe</a>
+        </div>
         
-        <br>
-        <a href="/new" class="btn">Nieuw Evenement Toevoegen</a>
     </main>
     <footer th:replace="~{fragments/layout :: footer}"></footer>
 </body>
