@@ -1,5 +1,5 @@
 # Anderlecht 1070 NGO
-Dit project hoort bij het vak "Entreprise Application". Dit is een informatieve website voor een NGO in Anderlecht die evenementen organiseert voor de bevolking. Code werd in html, css en java geschreven.
+Dit project hoort bij het vak "Entreprise Applications". Dit is een informatieve website voor een NGO in Anderlecht die evenementen organiseert voor de bevolking. Code werd in html, css en java geschreven.
 
 # Functionaliteiten
 - Het weergeven van de laatste evenementen en buurtactiviteiten op de homepagina.
@@ -29,8 +29,9 @@ Dit project hoort bij het vak "Entreprise Application". Dit is een informatieve 
 - Om het contactformulier te testen, wordt er 'mailtrap.io' gebruikt.
 
 # Screenshots van de applicatie
-<img width="1920" height="1552" alt="screencapture-localhost-8080-2026-06-15-17_34_19 (1)" src="https://github.com/user-attachments/assets/efb5bcf6-26ac-4117-9143-6eaf95fbc098" />
-<img width="1920" height="1477" alt="screencapture-localhost-8080-new-2026-06-15-17_34_49" src="https://github.com/user-attachments/assets/2c1b3b5e-2ea1-4089-ac0f-a2055543d6f1" />
+<img width="1920" height="1322" alt="screencapture-localhost-8080-2026-06-15-17_51_58" src="https://github.com/user-attachments/assets/50a57e70-fa59-46a4-942d-c87d4d7c814b" />
+<img width="1920" height="1610" alt="screencapture-localhost-8080-new-2026-06-15-18_00_01" src="https://github.com/user-attachments/assets/1152e5c1-3f4b-45e4-a3c6-a327e9fdae24" />
+<img width="1920" height="912" alt="screencapture-localhost-8080-contact-2026-06-15-18_05_37" src="https://github.com/user-attachments/assets/a2cacd1d-b575-495f-9e4a-e4282069250c" />
 <img width="1920" height="912" alt="screencapture-mailtrap-io-sandboxes-4711648-messages-5543086087-2026-06-15-17_35_41" src="https://github.com/user-attachments/assets/6349444d-739b-4a90-8e20-853ac7b8167a" />
 
 # Bronnen
